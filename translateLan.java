@@ -34,7 +34,7 @@ public class translateLan {
 		        		private static final long serialVersionUID = 1L;
 		             
 		        		{ 
-		        		put("he", "ሀ");put("hu", "ሁ");put("hi", "ሂ"); put("ha", "ሃ");put("hie", "ሄ"); put("h", "ህ"); put("ho", "ሆ");
+		        	    put("he", "ሀ");put("hu", "ሁ");put("hi", "ሂ"); put("ha", "ሃ");put("hie", "ሄ"); put("h", "ህ"); put("ho", "ሆ");
 		        	    put("le", "ለ");put("lu", "ሉ");put("li", "ሊ"); put("la", "ላ");put("lie", "ሌ"); put("l", "ል"); put("lo", "ሎ");
 		        	    put("h.e", "ሐ");put("h.u", "ሑ");put("h.i", "ሒ"); put("h.a", "ሓ");put("h.ie", "ሔ"); put("h.", "ሕ"); put("h.o", "ሖ");
 		        	    put("me", "መ");put("mu", "ሙ");put("mi", "ሚ"); put("ma", "ማ");put("mie", "ሜ"); put("m", "ም"); put("mo", "ሞ");
@@ -68,8 +68,7 @@ public class translateLan {
 		        		}
 		        		  };
 		        		
-		          // File f = new File("C:\Users\admin\Documents\\lan.txt");
-		        //   InputStream f= new FileInputStream(f);
+		         
       
 		
 		for(int i=0 ; i<z.length; i++){
@@ -81,8 +80,7 @@ public class translateLan {
 		{
 			   if (i < (z.length -1)){
 				String l = z[i+1];String A = z[i+2];
-//				System.out.println(z[i+1]);
-				if(l.equals("e") || l.equals("a") || l.equals("i") || l.equals("o") || l.equals("u")){
+			 if(l.equals("e") || l.equals("a") || l.equals("i") || l.equals("o") || l.equals("u")){
 					String con = z[i] + l;
 					res += lan.get(con);
 					i++;
@@ -101,4 +99,4 @@ public class translateLan {
 		}
 	}
 }
-					//System.out.println(con);
+					
